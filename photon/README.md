@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `photon` official image](https://hub.docker.com/_/photon) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0`, `4.0-20211112`, `latest`](https://github.com/vmware/photon-docker-image/blob/6e5f8985ee8c59ab061e8098612f6f3335359327/docker/Dockerfile)
--	[`3.0`, `3.0-20211105`](https://github.com/vmware/photon-docker-image/blob/85635c4557b95a12ab72d947033399e4fb7a795f/docker/Dockerfile)
--	[`1.0`, `1.0-20211112`](https://github.com/vmware/photon-docker-image/blob/b56a7f23378fc42db600ff8d0a342142b3115986/docker/Dockerfile)
--	[`2.0`, `2.0-20211112`](https://github.com/vmware/photon-docker-image/blob/d7f17a431bfc3a8b200c19d2f73a28242d470405/docker/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/photon build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/photon.svg?label=arm32v7/photon%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/photon/)
 
 # Quick reference (cont.)
 
@@ -60,7 +61,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM arm32v7/photon:1.0GA`.
 
 ## Support
 
