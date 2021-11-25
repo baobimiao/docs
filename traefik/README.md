@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `traefik` official image](https://hub.docker.com/_/traefik) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -25,10 +27,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`v2.5.4-windowsservercore-1809`, `2.5.4-windowsservercore-1809`, `v2.5-windowsservercore-1809`, `2.5-windowsservercore-1809`, `brie-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/f9d18d1eebcaf805d02bd683f771bcaebb643c44/windows/1809/Dockerfile)
--	[`v2.5.4`, `2.5.4`, `v2.5`, `2.5`, `brie`, `latest`](https://github.com/traefik/traefik-library-image/blob/f9d18d1eebcaf805d02bd683f771bcaebb643c44/alpine/Dockerfile)
 -	[`v1.7.33-windowsservercore-1809`, `1.7.33-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/87f6cff7d81f0a10c093b0c8f73a3547f1cc33df/windows/1809/Dockerfile)
--	[`v1.7.33-alpine`, `1.7.33-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/traefik/traefik-library-image/blob/87f6cff7d81f0a10c093b0c8f73a3547f1cc33df/alpine/Dockerfile)
--	[`v1.7.33`, `1.7.33`, `v1.7`, `1.7`, `maroilles`](https://github.com/traefik/traefik-library-image/blob/87f6cff7d81f0a10c093b0c8f73a3547f1cc33df/scratch/Dockerfile)
+
+[![winamd64/traefik build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/traefik.svg?label=winamd64/traefik%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/traefik/)
 
 # Quick reference (cont.)
 
@@ -182,13 +183,13 @@ A collection of contributions around Traefik can be found at [https://awesome.tr
 
 # Image Variants
 
-The `traefik` images come in many flavors, each designed for a specific use case.
+The `winamd64/traefik` images come in many flavors, each designed for a specific use case.
 
-## `traefik:<version>`
+## `winamd64/traefik:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `traefik:<version>-windowsservercore`
+## `winamd64/traefik:<version>-windowsservercore`
 
 This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
 
