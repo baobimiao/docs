@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `logstash` official image](https://hub.docker.com/_/logstash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.14.2`](https://github.com/docker-library/logstash/blob/c77765eaeb758ec15bc9525a44eff05eecc884aa/7.14/Dockerfile)
--	[`6.8.20`](https://github.com/docker-library/logstash/blob/5bcca98c9dc32e7f2311c2e90d557ee669ae1db8/6/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
+
+[![mips64le/logstash build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/logstash.svg?label=mips64le/logstash%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/logstash/)
 
 # Quick reference (cont.)
 
